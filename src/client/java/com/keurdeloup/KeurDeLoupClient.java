@@ -1,4 +1,4 @@
-package com.example;
+package com.keurdeloup;
 
 import net.fabricmc.api.ClientModInitializer;
 

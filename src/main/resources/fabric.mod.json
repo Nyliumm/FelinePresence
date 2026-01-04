@@ -3,26 +3,24 @@
 	"id": "keurdeloup",
 	"version": "${version}",
 	"name": "KeurDeLoup",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This KeurDeLoup mod contains Feline Presence enchantment, because Soja is terrified by creepers.",
 	"authors": [
-		"Me!"
+		"Soja",
+		"Nylium"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
+	"contact": {},
 	"license": "CC0-1.0",
 	"icon": "assets/keurdeloup/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.KeurDeLoup"
+			"com.keurdeloup.KeurDeLoup"
 		],
 		"client": [
-			"com.example.KeurDeLoupClient"
+			"com.keurdeloup.KeurDeLoupClient"
 		],
 		"fabric-datagen": [
-			"com.example.KeurDeLoupDataGenerator"
+			"com.keurdeloup.KeurDeLoupDataGenerator"
 		]
 	},
 	"mixins": [
@@ -33,7 +31,7 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.18.4",
+		"fabricloader": ">=0.18.2",
 		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*"
