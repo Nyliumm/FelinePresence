@@ -10,7 +10,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
@@ -46,28 +45,29 @@ public class FelinePresence implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		// Load the configuration file at startup
+		ModConfig.load();
 
-		LOGGER.info("Feline Presence initialized!");
+		LOGGER.info("Feline Presence initialized with gift weight: {}" , ModConfig.giftWeight);
 
-		// Feline Presence enchantment
+		// Feline Presence enchantment injection
 		LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
-			// Check for Trail Ruins rare archaeology
-			if (key.location().equals(ResourceLocation.withDefaultNamespace("archaeology/trail_ruins_rare"))) {
+			// We check if the loot table being loaded is the Cat Morning Gift
+			if (key.location().equals(ResourceLocation.withDefaultNamespace("gameplay/cat_morning_gift"))) {
 
 				// Get the enchantment holder from the registry
 				var enchantmentLookup = registries.lookupOrThrow(Registries.ENCHANTMENT);
 				Holder.Reference<Enchantment> felinePresence = enchantmentLookup.getOrThrow(FELINE_PRESENCE);
 
-				LootPool.Builder poolBuilder = LootPool.lootPool()
-						.setRolls(ConstantValue.exactly(1))
-						.add(LootItem.lootTableItem(Items.ENCHANTED_BOOK) // .add() is often used for entries
-								.apply(new SetEnchantmentsFunction.Builder()
-										.withEnchantment(felinePresence, ConstantValue.exactly(1))
-								));
-
-				tableBuilder.pool(poolBuilder.build()); // Ensure this matches your mapping (usually .pool() or .withPool())
+				// INSTEAD of tableBuilder.pool(), we use modifyPools
+				tableBuilder.modifyPools(poolBuilder -> {
+					// This adds the book to the existing pool of items
+					poolBuilder.add(LootItem.lootTableItem(Items.ENCHANTED_BOOK)
+							.setWeight(ModConfig.giftWeight)
+							.apply(new SetEnchantmentsFunction.Builder()
+									.withEnchantment(felinePresence, ConstantValue.exactly(1))
+							));
+				});
 			}
 		});
 	}
