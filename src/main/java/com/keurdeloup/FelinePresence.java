@@ -17,8 +17,8 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class KeurDeLoup implements ModInitializer {
-	public static final String MOD_ID = "keurdeloup";
+public class FelinePresence implements ModInitializer {
+	public static final String MOD_ID = "felinepresence";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -29,7 +29,7 @@ public class KeurDeLoup implements ModInitializer {
 	// This is data-driven via src/main/resources/data/keurdeloup/enchantment/feline_presence.json
 	public static final ResourceKey<Enchantment> FELINE_PRESENCE =
 			ResourceKey.create(Registries.ENCHANTMENT,
-					ResourceLocation.fromNamespaceAndPath(MOD_ID, "feline_presence"));
+					ResourceLocation.fromNamespaceAndPath("keurdeloup", "feline_presence"));
 
 	/**
 	 * Checks if the entity has the Feline Presence enchantment.
@@ -49,7 +49,7 @@ public class KeurDeLoup implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("KeurDeLoup initialized with Feline Presence enchantment!");
+		LOGGER.info("Feline Presence initialized!");
 
 		// Feline Presence enchantment
 		LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {

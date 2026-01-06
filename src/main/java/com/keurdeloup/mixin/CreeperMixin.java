@@ -1,6 +1,6 @@
 package com.keurdeloup.mixin;
 
-import com.keurdeloup.KeurDeLoup;
+import com.keurdeloup.FelinePresence;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
@@ -38,6 +38,6 @@ public abstract class CreeperMixin extends Monster {
      */
     @Unique
     private boolean hasFelinePresenceEnchantment(LivingEntity entity) {
-        return KeurDeLoup.hasFelinePresence(entity);
+        return FelinePresence.hasFelinePresence(entity);
     }
 }

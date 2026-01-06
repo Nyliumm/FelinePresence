@@ -1,32 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "keurdeloup",
+	"id": "felinepresence",
 	"version": "${version}",
-	"name": "KeurDeLoup",
-	"description": "This KeurDeLoup mod contains Feline Presence enchantment, because Soja is terrified by creepers.",
+	"name": "Feline Presence",
+	"description": "Contains Feline Presence enchantment, because Soja is terrified by creepers.",
 	"authors": [
 		"Soja",
 		"Nylium"
 	],
 	"contact": {},
 	"license": "CC0-1.0",
-	"icon": "assets/keurdeloup/FelinePresence.png",
+	"icon": "assets/felinepresence/FelinePresence.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.keurdeloup.KeurDeLoup"
+			"com.keurdeloup.FelinePresence"
 		],
 		"client": [
-			"com.keurdeloup.KeurDeLoupClient"
+			"com.keurdeloup.FelinePresenceClient"
 		],
 		"fabric-datagen": [
-			"com.keurdeloup.KeurDeLoupDataGenerator"
+			"com.keurdeloup.FelinePresenceDataGenerator"
 		]
 	},
 	"mixins": [
-		"keurdeloup.mixins.json",
+		"felinepresence.mixins.json",
 		{
-			"config": "keurdeloup.client.mixins.json",
+			"config": "felinepresence.client.mixins.json",
 			"environment": "client"
 		}
 	],

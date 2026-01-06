@@ -1,8 +1,8 @@
-# 🐾 KeurDeLoup
+# 🐾 Feline Presence
 
-![Feline Presence Showcase](src/main/resources/assets/keurdeloup/FelinePresence.png)
+![Feline Presence Showcase](src/main/resources/assets/felinepresence/FelinePresence.png)
 
-A mystical Minecraft mod that introduces the **Feline Presence** enchantment, allowing you to walk among creepers with the grace and safety of a cat.
+A mystical Minecraft mod by **KeurDeLoup** that introduces the **Feline Presence** enchantment, allowing you to walk among creepers with the grace and safety of a cat.
 
 ---
 
@@ -41,7 +41,8 @@ This enchantment is a rare relic of the Egyptian past. To obtain it, you must ve
 ## 🏗️ Development
 Built with the **Fabric Template Mod**.
 
-*   **Namespace:** `keurdeloup`
+*   **Namespace:** `felinepresence`
+*   **Organization:** `KeurDeLoup`
 *   **License:** CC0-1.0 (Public Domain)
 *   **Authors:** Soja & Nylium
 

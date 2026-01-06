@@ -2,7 +2,7 @@ package com.keurdeloup;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class KeurDeLoupClient implements ClientModInitializer {
+public class FelinePresenceClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
