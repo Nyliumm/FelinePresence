@@ -1,6 +1,6 @@
-# 🐾 Feline Presence
+# 🐈‍⬛ Feline Presence
 
-![Feline Presence Showcase](src/main/resources/assets/felinepresence/FelinePresenceFinalwTxt.png)
+![Feline Presence Showcase](src/main/resources/assets/felinepresence/FelinePresence.png)
 
 A Minecraft mod by **KeurDeLoup** that introduces the **Feline Presence** enchantment, allowing you to walk among creepers with the grace and safety of a cat.
 
@@ -10,19 +10,20 @@ A Minecraft mod by **KeurDeLoup** that introduces the **Feline Presence** enchan
 
 ### 🐱 Feline Presence Enchantment
 *   **Behavior:** Creepers will actively avoid you, fleeing just as they do from Ocelots and Cats.
-*   **Application:** Can only be applied to **Leg Armor**.
-*   **Rarity:** This is a **Treasure Enchantment**. You won't find it on an enchanting table!
+*   **Application:** Can only be applied to **Leggings**.
 
-## 🏺 How to Find It
-*Ancient civilizations discovered what caused creepers to fear cats, and learned how to distill that instinct into enchanted books.*
+## 🐾 How to Find It
 
-To obtain **Feline Presence**, you must explore **Trail Ruins**, remnants of these forgotten societies.
+*Spending enough time alongside your feline companions may teach you more than you expect.*
 
-1.  Locate a **Trail Ruin** structure.
-2.  Use a Brush on **Suspicious Gravel**.
-3.  if you're lucky, you'll find a **book** already imbued with Feline Presence.
+### 🎁 Morning Gifts
+**Feline Presence** cannot be obtained through enchanting tables, as it is a **Treasure Enchantment**.
 
-### ⚠️ Important Note
+Instead, tamed cats have a small chance to gift an **enchanted book** containing **Feline Presence** as part of their **morning gift** behavior.
+
+The more cats you live with, and the luckier you are, the better your chances !
+
+## 💥 Important Note
 While **Feline Presence** causes creepers to avoid you, it does **not** make you completely safe.
 
 If you get too close, creepers will still defend themselves and **explode**.  
