@@ -21,8 +21,6 @@ A Minecraft mod that introduces the **Feline Presence** enchantment, allowing yo
 
 Instead, tamed cats have a small chance to gift an **enchanted book** containing **Feline Presence** as part of their **morning gift** behavior.
 
-The more cats you live with, and the luckier you are, the better your chances !
-
 ## 💥 Important Note
 While **Feline Presence** causes creepers to avoid you, it does **not** make you completely safe.
 
