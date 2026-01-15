@@ -21,12 +21,6 @@ A Minecraft mod that introduces the **Feline Presence** enchantment, allowing yo
 
 Instead, tamed cats have a small chance to gift an **enchanted book** containing **Feline Presence** as part of their **morning gift** behavior.
 
-## 💥 Important Note
-While **Feline Presence** causes creepers to avoid you, it does **not** make you completely safe.
-
-If you get too close, creepers will still defend themselves and **explode**.  
-This enchantment discourages approach, it does not prevent detonation.
-
 ---
 
 ## 🛠️ Installation
@@ -39,7 +33,7 @@ This enchantment discourages approach, it does not prevent detonation.
 ### ☁️ Server
 1. Ensure your server is running **Fabric** (Minecraft 1.21+).
 2. Ensure the server is running **Java 21**.
-3. Place both **Fabric API** and **KeurDeLoup** in the server's `mods` folder.
+3. Place both **Fabric API** and **felinepresence.jar** in the server's `mods` folder.
 4. *Note: Every player joining must also have the mod installed locally.*
 
 ---
