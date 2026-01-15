@@ -16,13 +16,12 @@ public class ModConfig {
                 properties.load(input);
                 int weight = Integer.parseInt(properties.getProperty("gift_weight", "1"));
 
-                // On limite la valeur entre 0 et 100 pour la sécurité
                 giftWeight = Math.max(0, Math.min(100, weight));
             } catch (IOException | NumberFormatException e) {
                 FelinePresence.LOGGER.error("Failed to load config, using defaults", e);
             }
         } else {
-            save(); // Create the file if it doesn't exist
+            save();
         }
     }
 

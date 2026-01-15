@@ -3,6 +3,7 @@
 	"package": "com.keurdeloup.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"EntityAccessor",
 		"CreeperMixin"
 	],
 	"injectors": {
